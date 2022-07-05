@@ -62,10 +62,12 @@ const checkItem = function(event) {
 }
 
 const showItem = function() {
-	const keys = Object.keys(localStorage);
-	let item = 1
+	let keys = Object.keys(localStorage);
     for(item of keys) {
-    	addItem(localStorage.getItem(item));
+    	if(item > 0) {
+    		addItem(localStorage.getItem(item));
+    		console.log(item);
+    	}	
     }
 }
 
