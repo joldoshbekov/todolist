@@ -1,0 +1,123 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #38404B;
+	padding: 100px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+}
+
+header {
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 30%;
+}
+
+header > .add-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #38404B;
+	width: 578px;
+	height: 58px;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	border-radius: 65px;
+	padding: 15px;
+}
+
+header > .add-list > input {
+	flex: 1 1 0%;
+	background-color: transparent;
+	height: 40px;
+	border: none;
+	color: rgba(148, 173, 207, 0.7);
+	line-height: 18px;
+	font-size: 20px;
+	padding-left: 10px;
+}
+
+header > .add-list > input:focus {
+	outline: none;
+}
+
+header > .add-list > img {
+	cursor: pointer;
+	padding: 15px 20px;
+}
+
+#list {
+	margin: 50px 0;
+}
+
+.list-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.list-container > .list-item {
+	background: #38404B;
+	max-width: 449px;
+	flex: 1 1 300px;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	border-radius: 65px;
+	padding: 15px 30px;
+	margin-left: 120px;
+	margin-top: 50px;
+	height: 59px;
+	display: flex;
+	align-items: center;
+	color: #94ADCF;
+	cursor: pointer;
+
+}
+
+.list-container > .list-item > i {
+	margin-right: 30px;
+	width: 18px;
+}
+
+.active {
+	text-transform: uppercase;
+	color: lightgreen;
+	font-weight: 700;
+}
+
+
+.list-container > .list-item > .list-item-text {
+	background-color: transparent;
+	color: #94ADCF;
+	border: none;
+	min-width: 30%;
+	font-size: 16px;
+	cursor: pointer;
+	margin-right: 5px;
+}
+
+.list-container > .list-item > .list-item-text.active {
+	color: lightgreen;
+}
+
+.list-container > .list-item > .list-item-text:focus {
+	outline: none;
+	/*border-bottom: 1px solid #94ADCF; */
+}
+
+.list-container > .list-item > .btn {
+	padding: 10px 20px;
+	background-color: #94ADCF;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 15px;
+	margin-right: 10px;
+	font-size: 12px;
+}
